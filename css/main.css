@@ -1,0 +1,226 @@
+/************ GENERAL ***************/
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  padding:0;
+}
+
+img {
+  width:100%;
+}
+
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.active {
+  background: #2b8b60;
+}
+/************ HEADER ***************/
+
+header {
+  text-align: center;
+}
+
+header img {
+  width: 240px;
+}
+
+header .logo-container {
+  padding: 20px 0;
+}
+
+/************ MENU ***************/
+
+nav {
+  background-color: #14DF98;
+}
+
+nav ul {
+  margin:0;
+  list-style-type: none;
+}
+
+nav a {
+  display: inline-block;
+  text-transform: uppercase;
+  text-decoration: none;
+  padding: 12px 10px;
+  color: #ffffff;
+}
+
+/************ GALLERY ***************/
+
+#gallery-title {
+  text-align:center;
+}
+
+#gallery {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#gallery img {
+  width:100%;
+}
+
+#gallery .item {
+  width: 50%;
+  float: left;
+  padding: 15px;
+}
+
+#gallery .caption {
+  background-color: #f0f0f0;
+  padding: 10px;
+}
+
+#gallery .caption p{
+  margin:0;
+}
+
+#gallery a:hover {
+  color: #14DF98;
+}
+
+#gallery .picture {
+  line-height: 0;
+}
+
+/************ ABOUT ***************/
+
+#about img {
+  border-radius:100%;
+  padding: 25px 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/************ FOOTER ***************/
+
+footer.main {
+  text-align:center;
+  padding:15px;
+}
+
+footer.main p {
+  display: inline-block;
+  margin-top:0;
+  font-size: 1.2rem;
+}
+
+footer.main section.social {
+  padding: 15px 0;
+  margin:0;
+}
+
+footer.main a {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 10px;
+}
+
+footer.main img {
+  width:22px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /************ GALLERY ***************/
+
+  #gallery .item {
+    width: 33.3%;
+  }
+
+  #gallery .item:nth-child(3n+1) {
+    clear:left;
+  }
+
+    /************ ABOUT ***************/
+
+    #about img {
+      width: 70%;
+    }
+
+    #about .profile-pic {
+      float:left;
+      width:40%;
+      padding: 15px;
+      text-align:center;
+    }
+
+    #about .description {
+      width:60%;
+      float: right;
+      padding: 25px;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+  /************ GALLERY ***************/
+
+  #gallery a:hover {
+    color: #14DF98;
+  }
+
+  nav a {
+    transition: background-color .3s;
+  }
+
+  nav a:hover {
+    background-color: #2b8b60;
+  }
+
+  #gallery .item {
+    transition: opacity .3s;
+  }
+
+  #gallery .item:hover {
+    opacity: .7;
+  }
+
+}
+
+@media only screen and (max-width: 767px) {
+
+  /************ GALLERY ***************/
+
+  #gallery .item:nth-child(2n+1) {
+    clear:left;
+  }
+
+  #about img {
+    width: 50%;
+  }
+
+  #about .profile-pic {
+    text-align: center;
+  }
+  
+}
